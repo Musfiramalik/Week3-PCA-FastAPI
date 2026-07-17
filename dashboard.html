@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - Steel Energy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        nav {
+            background-color: #2c3e50;
+            padding: 15px 30px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 25px;
+            font-size: 16px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 40px;
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .chart-box {
+            margin-bottom: 50px;
+        }
+        .chart-box img {
+            max-width: 700px;
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .chart-box h3 {
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/predict">Prediction</a>
+    </nav>
+
+    <div class="container">
+        <h1>Key Insights Dashboard</h1>
+
+        <div class="chart-box">
+            <h3>Average Energy Usage by Hour of Day</h3>
+            <img src="/static/line_chart.png" alt="Energy by Hour">
+        </div>
+
+        <div class="chart-box">
+            <h3>Average Energy Consumption by Load Type</h3>
+            <img src="/static/grouped_bar_chart.png" alt="Energy by Load Type">
+        </div>
+
+        <div class="chart-box">
+            <h3>Correlation Heatmap</h3>
+            <img src="/static/heatmap.png" alt="Correlation Heatmap">
+        </div>
+    </div>
+
+</body>
+</html>
